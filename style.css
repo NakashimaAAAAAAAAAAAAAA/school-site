@@ -5,6 +5,48 @@ body {
   color: #333;
 }
 
+/* メニューボタン（右上） */
+#menuBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* サイドメニュー */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #2c3e50;
+  color: white;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+#sideMenu.open {
+  right: 0;
+}
+
+#sideMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sideMenu li {
+  padding: 15px 20px;
+}
+
+#sideMenu a {
+  color: white;
+  text-decoration: none;
+}
+
 /* ヘッダー */
 header {
   background: linear-gradient(135deg, #2c3e50, #34495e);
