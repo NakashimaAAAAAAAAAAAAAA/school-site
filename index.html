@@ -2,33 +2,55 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>〇〇塾</title>
+  <title>サンプルサイト</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- メニューボタン -->
+<div id="menuBtn">☰</div>
+
+<!-- サイドメニュー -->
+<nav id="sideMenu">
+  <ul>
+    <li><a href="#">ホーム</a></li>
+    <li><a href="#">サービス</a></li>
+    <li><a href="#">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<!-- ヘッダー -->
 <header>
-  <h1>伊藤塾 since1987</h1>
+  <h1>マイサイト</h1>
+  <p>シンプルなWebページ</p>
 </header>
 
+<!-- セクション -->
 <section>
-  <h2>コース・料金</h2>
-  <p>小学生 / 中学生 / 高校生</p>
+  <h2>概要</h2>
+  <p>ここに説明文が入ります。</p>
 </section>
 
 <section>
-  <h2>アクセス</h2>
-  <p>愛知県〇〇市〇〇町</p>
+  <h2>サービス</h2>
+  <p>サービス内容を書きます。</p>
 </section>
 
-<section>
-  <h2>お問い合わせ</h2>
-  <p>電話：090-xxxx-xxxx</p>
-</section>
-
+<!-- フッター -->
 <footer>
-  <p>© 〇〇塾</p>
+  © 2026 My Site
 </footer>
+
+<!-- JavaScript -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const sideMenu = document.getElementById("sideMenu");
+
+  menuBtn.addEventListener("click", () => {
+    sideMenu.classList.toggle("open");
+  });
+</script>
 
 </body>
 </html>
