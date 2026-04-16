@@ -10,9 +10,20 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
-  font-size: 28px;
+  font-size: 26px;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+#menuBtn:hover {
+  background: #34495e;
+  transform: scale(1.05);
 }
 
 /* サイドメニュー */
@@ -45,6 +56,21 @@ body {
 #sideMenu a {
   color: white;
   text-decoration: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 998;
+}
+
+#overlay.show {
+  display: block;
 }
 
 /* ヘッダー */
