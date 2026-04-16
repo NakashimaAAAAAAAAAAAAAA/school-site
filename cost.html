@@ -1,3 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>諸経費 | 伊藤塾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuBtn">☰</div>
+
+<nav id="sideMenu">
+  <ul>
+    <li><a href="philosophy.html">教育理念</a></li>
+    <li><a href="contents.html">授業内容</a></li>
+    <li><a href="cost.html">諸経費</a></li>
+    <li><a href="access.html">アクセス</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>アクセス</h1>
+</header>
+
 <section>
   <h2>諸費用（税込）</h2>
   <p>（令和6年4月）</p>
@@ -38,3 +62,18 @@
 
   <p>※入塾金は兄弟姉妹在塾の場合は半額となります。</p>
 </section>
+
+<footer>
+  Copyright © 2026 伊藤塾 All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const sideMenu = document.getElementById("sideMenu");
+  menuBtn.addEventListener("click", () => {
+    sideMenu.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>
