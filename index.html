@@ -20,6 +20,7 @@
     <li><a href="access.html">アクセス</a></li>
   </ul>
 </nav>
+<div id="overlay"></div>
 
 <!-- ヘッダー -->
 <header>
@@ -41,9 +42,17 @@
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const sideMenu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
 
   menuBtn.addEventListener("click", () => {
     sideMenu.classList.toggle("open");
+    overlay.classList.toggle("show");
+  });
+
+  // 外クリックで閉じる
+  overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    overlay.classList.remove("show");
   });
 </script>
 
