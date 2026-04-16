@@ -67,11 +67,23 @@
   Copyright © 2026 伊藤塾 All Rights Reserved.
 </footer>
 
+<div id="overlay"></div>
+
+<!-- JavaScript -->
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const sideMenu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+
   menuBtn.addEventListener("click", () => {
     sideMenu.classList.toggle("open");
+    overlay.classList.toggle("show");
+  });
+
+  // 外クリックで閉じる
+  overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    overlay.classList.remove("show");
   });
 </script>
 
