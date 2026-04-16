@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アクセス | 伊藤塾</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuBtn">☰</div>
+
+<nav id="sideMenu">
+  <ul>
+    <li><a href="philosophy.html">教育理念</a></li>
+    <li><a href="contents.html">授業内容</a></li>
+    <li><a href="cost.html">諸経費</a></li>
+    <li><a href="access.html">アクセス</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>アクセス</h1>
+</header>
+
+<section>
+  <p>ここに教育理念を書く</p>
+</section>
+
+<footer>
+  Copyright © 2026 伊藤塾 All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const sideMenu = document.getElementById("sideMenu");
+  menuBtn.addEventListener("click", () => {
+    sideMenu.classList.toggle("open");
+  });
+</script>
+
+</body>
+</html>
