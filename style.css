@@ -207,37 +207,42 @@ footer {
 @media (max-width: 768px) {
 
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   header {
-    padding: 60px 15px;
+    padding: 40px 15px;
   }
 
   header h1 {
-    font-size: 38px;
+    font-size: 32px;
+    margin-bottom: 8px;
   }
 
   header p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   section {
-    margin: 20px;
-    padding: 25px;
+    margin: 12px;
+    padding: 20px;
+  }
+
+  section p {
+    font-size: 16px;
   }
 
   th,
   td {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 8px;
   }
 
-  /* スマホ用ナビゲーション */
+  /* スマホ用ナビ */
   .navbar {
     display: flex;
     flex-direction: column;
@@ -248,10 +253,11 @@ footer {
     box-sizing: border-box;
     text-align: center;
 
-    font-size: 22px;      /* 文字を大きく */
+    font-size: 18px;
     font-weight: bold;
 
-    padding: 20px 10px;   /* 高さを確保 */
+    padding: 14px 10px;
+
     border-bottom: 1px solid rgba(255,255,255,0.2);
   }
 
