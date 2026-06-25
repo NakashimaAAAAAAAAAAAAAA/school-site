@@ -103,6 +103,33 @@ header p {
   opacity: 0.95;
 }
 
+/* ナビゲーションバー */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 18px 30px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #34495e;
+}
+
+.navbar a.active {
+  background: white;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
 /* セクション */
 section {
   max-width: 900px;
@@ -209,4 +236,14 @@ footer {
     font-size: 16px;
     padding: 10px;
   }
+
+  .navbar {
+  flex-direction: column;
+}
+
+.navbar a {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
 }
