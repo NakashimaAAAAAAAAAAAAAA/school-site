@@ -301,26 +301,34 @@ footer {
   .navbar {
     display: flex;
     flex-direction: column;
-
+  
     background: #f4f8fb;
-    border-top: 1px solid #d7e2ea;
+  
+    border-top: none;
     border-bottom: 1px solid #d7e2ea;
+  
+    margin: 0;
   }
-
+  
   .navbar a {
+    display: block;
+  
     width: 100%;
     box-sizing: border-box;
-
+  
     text-align: center;
     text-decoration: none;
-
+  
     color: #385066;
-
-    font-size: 18px;
+  
+    font-size: 17px;
     font-weight: 500;
-
+    line-height: 1.2;
+  
+    padding: 12px 10px;
+  
     border-bottom: 1px solid #d7e2ea;
-
+  
     transition: all 0.25s ease;
   }
 
