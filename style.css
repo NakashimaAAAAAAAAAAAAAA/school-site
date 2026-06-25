@@ -244,39 +244,39 @@ footer {
     font-size: 16px;
   }
 
-/* ヘッダー */
-header {
-  background: white;
-  color: #222;
+  /* ヘッダー */
+  header {
+    background: white;
+    color: #222;
 
-  text-align: center;
+    text-align: center;
 
-  padding: 30px 20px 20px;
+    padding: 30px 20px 20px;
 
-  border-bottom: 1px solid #dcdcdc;
-}
+    border-bottom: 1px solid #dcdcdc;
+  }
 
-/* 塾名 */
-header h1 {
-  font-family: "Kaisei Tokumin", serif;
+  /* 塾名 */
+  header h1 {
+    font-family: "Kaisei Tokumin", serif;
 
-  font-size: 48px;
-  font-weight: normal;
+    font-size: 48px;
+    font-weight: normal;
 
-  margin: 0;
-  letter-spacing: 0.08em;
-}
+    margin: 0;
+    letter-spacing: 0.08em;
+  }
 
-/* since1987 */
-header p {
-  font-family: "Kaisei Tokumin", serif;
+  /* since1987 */
+  header p {
+    font-family: "Kaisei Tokumin", serif;
 
-  font-size: 18px;
-  color: #666;
+    font-size: 18px;
+    color: #666;
 
-  margin-top: 5px;
-  margin-bottom: 0;
-}
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 
   h2 {
     font-size: 24px;
@@ -296,57 +296,50 @@ header p {
     font-size: 14px;
     padding: 8px;
   }
-  
-/* スマホ用ナビ */
-.navbar {
-  display: flex;
-  flex-direction: column;
 
-  background: white;
-  border-bottom: 1px solid #dcdcdc;
-}
+  .navbar a {
+    width: 100%;
+    box-sizing: border-box;
 
-.navbar a {
-  width: 100%;
-  box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 
-  text-align: center;
-  text-decoration: none;
+    color: #2f4356;
 
-  color: #333;
+    font-size: 18px;
+    font-weight: 500;
 
-  font-size: 18px;
-  font-weight: 500;
+    padding: 16px 10px;
 
-  padding: 16px 10px;
+    border-bottom: 1px solid #d6dee6;
 
-  border-bottom: 1px solid #e5e5e5;
+    transition: all 0.25s ease;
+  }
 
-  transition: 0.3s;
-}
+  .navbar a:hover,
+  .navbar a:active {
+    background: #dbe7f1;
+  }
 
-.navbar a:hover {
-  background: #f7f7f7;
-}
+  .navbar a.active {
+    background: #5f7d95;
+    color: white;
+    font-weight: bold;
+  }
 
-.navbar a.active {
-  font-weight: bold;
-  color: #000;
-}
+  .navbar a.active::after {
+    content: "";
+    display: block;
 
-.navbar a.active::after {
-  content: "";
-  display: block;
+    width: 40px;
+    height: 2px;
 
-  width: 40px;
-  height: 2px;
+    background: rgba(255,255,255,0.8);
 
-  background: #333;
+    margin: 6px auto 0;
+  }
 
-  margin: 6px auto 0;
-}
-
-.navbar a:last-child {
-  border-bottom: none;
-}
+  .navbar a:last-child {
+    border-bottom: none;
+  }
 }
