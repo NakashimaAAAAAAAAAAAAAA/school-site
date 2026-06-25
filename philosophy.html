@@ -7,22 +7,17 @@
 </head>
 <body>
 
-<div id="menuBtn">☰</div>
-
-<nav id="sideMenu">
-  <ul>
-    <li><a href="index.html">トップページ</a></li>
-    <li><a href="philosophy.html">教育理念</a></li>
-    <li><a href="contents.html">授業内容</a></li>
-    <li><a href="cost.html">諸経費</a></li>
-    <li><a href="access.html">アクセス</a></li>
-  </ul>
-</nav>
-
 <header>
   <h1>教育理念</h1>
 </header>
-
+  
+<nav class="navbar">
+  <a href="index.html">トップページ</a>
+  <a href="contents.html">授業内容</a>
+  <a href="cost.html">諸経費</a>
+  <a href="access.html">アクセス</a>
+</nav>
+  
 <section>
   <p>入試制度や学校教育の内容が時代とともにどのように変わろうとも、最後の決め手となるのはやはり本人の真の実力です。</p>
   <p>しかし、その実力を身に着けるための近道や、便利な方法などありません。必要なのは、まず生徒の不断の向上心と強い意志、そしてそういった生徒を手助けできる環境です。</p>
@@ -32,26 +27,6 @@
 <footer>
   Copyright © 2026 伊藤塾 All Rights Reserved.
 </footer>
-
-<div id="overlay"></div>
-
-<!-- JavaScript -->
-<script>
-  const menuBtn = document.getElementById("menuBtn");
-  const sideMenu = document.getElementById("sideMenu");
-  const overlay = document.getElementById("overlay");
-
-  menuBtn.addEventListener("click", () => {
-    sideMenu.classList.toggle("open");
-    overlay.classList.toggle("show");
-  });
-
-  // 外クリックで閉じる
-  overlay.addEventListener("click", () => {
-    sideMenu.classList.remove("open");
-    overlay.classList.remove("show");
-  });
-</script>
 
 </body>
 </html>
