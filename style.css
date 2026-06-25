@@ -237,13 +237,25 @@ footer {
     padding: 10px;
   }
 
+  /* スマホ用ナビゲーション */
   .navbar {
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
-.navbar a {
-  width: 100%;
-  text-align: center;
-  padding: 15px;
-}
+  .navbar a {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: 22px;      /* 文字を大きく */
+    font-weight: bold;
+
+    padding: 20px 10px;   /* 高さを確保 */
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
 }
