@@ -7,21 +7,17 @@
 </head>
 <body>
 
-<div id="menuBtn">☰</div>
-
-<nav id="sideMenu">
-  <ul>
-    <li><a href="index.html">トップページ</a></li>
-    <li><a href="contents.html">授業内容</a></li>
-    <li><a href="cost.html">諸経費</a></li>
-    <li><a href="access.html">アクセス</a></li>
-  </ul>
-</nav>
-
 <header>
   <h1>アクセス</h1>
 </header>
-
+  
+<nav class="navbar">
+  <a href="index.html">トップページ</a>
+  <a href="contents.html">授業内容</a>
+  <a href="cost.html">諸経費</a>
+  <a href="access.html">アクセス</a>
+</nav>
+  
 <section>
   <h2>アクセス情報</h2>
 
@@ -44,26 +40,6 @@
 <footer>
   Copyright © 2026 伊藤塾 All Rights Reserved.
 </footer>
-
-<div id="overlay"></div>
-
-<!-- JavaScript -->
-<script>
-  const menuBtn = document.getElementById("menuBtn");
-  const sideMenu = document.getElementById("sideMenu");
-  const overlay = document.getElementById("overlay");
-
-  menuBtn.addEventListener("click", () => {
-    sideMenu.classList.toggle("open");
-    overlay.classList.toggle("show");
-  });
-
-  // 外クリックで閉じる
-  overlay.addEventListener("click", () => {
-    sideMenu.classList.remove("open");
-    overlay.classList.remove("show");
-  });
-</script>
 
 </body>
 </html>
