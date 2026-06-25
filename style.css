@@ -258,25 +258,56 @@ header p {
   }
 
   /* スマホ用ナビ */
-  .navbar {
-    display: flex;
-    flex-direction: column;
-  }
+/* スマホ用ナビ */
+.navbar {
+  display: flex;
+  flex-direction: column;
 
-  .navbar a {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
+  background: white;
+  border-bottom: 1px solid #dcdcdc;
+}
 
-    font-size: 18px;
-    font-weight: bold;
+.navbar a {
+  width: 100%;
+  box-sizing: border-box;
 
-    padding: 14px 10px;
+  text-align: center;
+  text-decoration: none;
 
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
+  color: #333;
 
-  .navbar a:last-child {
-    border-bottom: none;
-  }
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 16px 10px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #f7f7f7;
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar a.active::after {
+  content: "";
+  display: block;
+
+  width: 40px;
+  height: 2px;
+
+  background: #333;
+
+  margin: 6px auto 0;
+}
+
+.navbar a:last-child {
+  border-bottom: none;
+}
 }
