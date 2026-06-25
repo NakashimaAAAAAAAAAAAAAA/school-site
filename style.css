@@ -210,18 +210,39 @@ footer {
     font-size: 16px;
   }
 
-  header {
-    padding: 30px 15px;
-  }
+/* ヘッダー */
+header {
+  background: white;
+  color: #222;
 
-  header h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
-  }
+  text-align: center;
 
-  header p {
-    font-size: 16px;
-  }
+  padding: 30px 20px 20px;
+
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* 塾名 */
+header h1 {
+  font-family: "Kaisei Tokumin", serif;
+
+  font-size: 48px;
+  font-weight: normal;
+
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+/* since1987 */
+header p {
+  font-family: "Kaisei Tokumin", serif;
+
+  font-size: 18px;
+  color: #666;
+
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 
   h2 {
     font-size: 24px;
