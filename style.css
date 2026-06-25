@@ -105,23 +105,17 @@ header p {
 
 /* ナビゲーションバー */
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #2c3e50;
-  flex-wrap: wrap;
+  background: white;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 18px 30px;
-  font-size: 18px;
-  transition: 0.3s;
+  color: #333;
+  padding: 16px 28px;
 }
 
 .navbar a:hover {
-  background: #34495e;
+  background: #f3f3f3;
 }
 
 .navbar a.active {
