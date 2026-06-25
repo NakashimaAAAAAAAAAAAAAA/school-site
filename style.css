@@ -306,6 +306,7 @@ footer {
   border-bottom: 1px solid #bfcddb;
 
   margin: 0;
+  gap: 0;
 }
 
 .navbar a {
@@ -331,6 +332,7 @@ footer {
   border-bottom: 1px solid #c7d3df;
 
   transition: all 0.2s ease;
+  line-height: 1;
 }
 
 .navbar a:hover,
