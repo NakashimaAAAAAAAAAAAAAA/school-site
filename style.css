@@ -301,10 +301,9 @@ footer {
   display: flex;
   flex-direction: column;
 
-  background: #f4f8fb;
+  background: #e8eff5;
 
-  border-top: none;
-  border-bottom: 1px solid #d7e2ea;
+  border-bottom: 1px solid #bfcddb;
 
   margin: 0;
 }
@@ -315,33 +314,33 @@ footer {
   justify-content: center;
 
   width: 100%;
-  min-height: 52px;
+  min-height: 44px;
 
   box-sizing: border-box;
 
   text-align: center;
   text-decoration: none;
 
-  color: #385066;
+  color: #2e4357;
 
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
 
-  padding: 12px 10px;
+  padding: 8px 10px;
 
-  border-bottom: 1px solid #d7e2ea;
+  border-bottom: 1px solid #c7d3df;
 
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .navbar a:hover,
 .navbar a:active {
-  background: #e7f0f7;
+  background: #d7e4ef;
 }
 
 .navbar a.active {
-  background: #e0ebf4;
-  color: #243746;
+  background: #6b879d;
+  color: white;
   font-weight: bold;
 }
 
@@ -350,12 +349,13 @@ footer {
 
   position: absolute;
 
-  width: 40px;
+  width: 32px;
   height: 2px;
 
-  margin-top: 28px;
+  margin-top: 24px;
 
-  background: #5f7d95;
+  background: rgba(255,255,255,0.8);
+
   border-radius: 2px;
 }
 
