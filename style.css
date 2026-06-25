@@ -315,24 +315,15 @@ footer {
   justify-content: center;
 
   width: 100%;
-  min-height: 18px;
 
-  box-sizing: border-box;
-
-  text-align: center;
-  text-decoration: none;
+  padding: 10px 5px;
 
   color: #2e4357;
 
   font-size: 16px;
   font-weight: 500;
 
-  padding: 3px 5px;
-
   border-bottom: 1px solid #c7d3df;
-
-  transition: all 0.2s ease;
-  line-height: 1;
 }
 
 .navbar a:hover,
