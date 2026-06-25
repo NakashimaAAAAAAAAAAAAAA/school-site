@@ -297,6 +297,16 @@ footer {
     padding: 8px;
   }
 
+  /* スマホ用ナビ */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+
+    background: #f4f8fb;
+    border-top: 1px solid #d7e2ea;
+    border-bottom: 1px solid #d7e2ea;
+  }
+
   .navbar a {
     width: 100%;
     box-sizing: border-box;
@@ -304,39 +314,41 @@ footer {
     text-align: center;
     text-decoration: none;
 
-    color: #2f4356;
+    color: #385066;
 
     font-size: 18px;
     font-weight: 500;
 
-    padding: 16px 10px;
+    padding: 18px 10px;
 
-    border-bottom: 1px solid #d6dee6;
+    border-bottom: 1px solid #d7e2ea;
 
     transition: all 0.25s ease;
   }
 
   .navbar a:hover,
   .navbar a:active {
-    background: #dbe7f1;
+    background: #e7f0f7;
   }
 
   .navbar a.active {
-    background: #5f7d95;
-    color: white;
+    background: #e0ebf4;
+    color: #243746;
     font-weight: bold;
   }
 
   .navbar a.active::after {
     content: "";
+
     display: block;
 
-    width: 40px;
+    width: 50px;
     height: 2px;
 
-    background: rgba(255,255,255,0.8);
+    margin: 8px auto 0;
 
-    margin: 6px auto 0;
+    background: #5f7d95;
+    border-radius: 2px;
   }
 
   .navbar a:last-child {
