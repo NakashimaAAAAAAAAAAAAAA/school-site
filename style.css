@@ -206,56 +206,42 @@ footer {
 /* スマホ対応 */
 @media (max-width: 768px) {
 
-  body {
-    font-size: 18px;
-  }
-
-  header {
-    padding: 60px 15px;
-  }
-
-  header h1 {
-    font-size: 38px;
-  }
-
-  header p {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  section {
-    margin: 20px;
-    padding: 25px;
-  }
-
-  th,
-  td {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  /* スマホ用ナビゲーション */
   .navbar {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background: #f8f9fb;
   }
 
   .navbar a {
+    display: block;
+
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
 
-    font-size: 22px;      /* 文字を大きく */
+    background: #2c3e50;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 24px;
     font-weight: bold;
 
-    padding: 20px 10px;   /* 高さを確保 */
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 24px 15px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   }
 
-  .navbar a:last-child {
-    border-bottom: none;
+  .navbar a:hover {
+    background: #34495e;
+  }
+
+  .navbar a.active {
+    background: #1abc9c;
+    color: white;
   }
 }
